@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+    <h2>Company Details</h2>
+    
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Company ID</th>
+          <th>Company Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ companyID }}</td>
+          <td>{{ companyName }}</td>
+       </tr>
+      </tbody>
+    </table>
+    <button type="submit" class="btn btn-primary" (click)="back_to_company()">Back</button>
+  </div>

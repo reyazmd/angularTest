@@ -1,0 +1,21 @@
+<div class="row">
+  <form>
+  <div class="col-md-6">
+  <h2>Search Company</h2>
+  <div class="form-group">
+      <div id="custom-search-input">
+          <div class="input-group col-md-12">
+              <input type="text" [formControl]="searchTerm" list="companyList"  class="form-control input-lg" placeholder="Search.." />
+              <datalist id="companyList" >
+                    <option *ngFor="let item of searchResult" value="{{ item.companyName }}" >{{ item.companyName }}</option>
+                </datalist>
+              <!--<ul *ngFor="let item of searchResult">
+                <li>{{ item.companyName }}</li>
+                </ul>-->
+          </div>
+      </div>
+  </div>
+      <button type="submit" class="btn btn-primary" (click)="showDetails()">Submit</button>
+  </div>
+</form>
+</div>
